@@ -5,7 +5,31 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#about .about-content {
+  display: flex;
+}
+
+#about .image-container {
+  flex: 0 0 30%;
+  padding-right: 20px;
+}
+
+#about .text-container {
+  flex: 1;
+}
+
+#about .image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+#social .social1 ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 header {
@@ -13,8 +37,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color:  rgb(5, 52, 129);
   padding: 20px;
+}
+
+p {
+  font-size: 23px;
 }
 
 nav ul {
@@ -28,8 +56,9 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-size: 22px;
 }
 
 main {
@@ -42,8 +71,9 @@ section {
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: rgb(5, 52, 129)
 }
 
 ul {
@@ -51,21 +81,22 @@ ul {
 }
 
 ul li a {
-  color: #333;
+  color: #333333;
   text-decoration: none;
-  display: block;
+  display: flex;
   padding: 10px;
-  border: 1px solid #333;
+  border: 1.5px solid rgb(5, 52, 129);
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 ul li a:hover {
-  background-color: #333;
+  background-color: lightseagreen;
   color: #fff;
 }
 
 label {
-  display: block;
+  display: flex;
   margin-bottom: 10px;
 }
 
@@ -80,7 +111,7 @@ textarea {
 
 button[type="submit"] {
   display: block;
-  background-color: #333;
+  background-color:  rgb(5, 52, 129);
   color: #fff;
   padding: 10px;
   border: none;
@@ -88,9 +119,47 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: green;
+  background-color: lightseagreen;
   color: #fff;
   padding: 10px;
   border: none;
   cursor: pointer;
+}
+
+#social ul {
+  list-style: none;
+  padding: 0;
+}
+
+#social li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#social a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+#social i {
+  margin-right: 5px;
+}
+
+#social .linkedin {
+  color: #0A66C2;
+}
+
+#social .github {
+  color: #333;
+}
+
+#social .spotify {
+  color: darkgreen;
+}
+
+.home-button {
+  color: black;
 }

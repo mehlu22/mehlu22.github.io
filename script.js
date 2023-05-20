@@ -1,23 +1,18 @@
-// Get the form element and add an event listener for form submission
-const form = document.querySelector('form');
-form.addEventListener('submit', submitForm);
+function sendEmail(event) {
+  event.preventDefault();
 
-// Function to submit the form data
-function submitForm(event) {
-  event.preventDefault(); // prevent the default form submission
-
-  // Get the values of the input fields
+  // Get form values
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  // Construct the email message
-  const subject = `New message from ${name}`;
+  // Email content
+  const subject = 'New Contact Form Submission';
   const body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
 
-  // Send the email
-  window.location.href = `mailto:mehlu22@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  // Construct the mailto URL
+  const mailtoUrl = `mailto:mehlu22@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-  // Reset the form
-  form.reset();
+  // Open the mailto URL in a new window or tab
+  window.open(mailtoUrl);
 }

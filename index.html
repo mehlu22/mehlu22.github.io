@@ -5,15 +5,17 @@
     <title>Mehlam Saifudeen Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#social">Social</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">My Portfolio</a></li>
+          <li><a href="#social">Social Media</a></li>
+          <li><a href="Mehlam Saifudeen Biotech Resume Sequential.pdf" target="_blank">Resume</a></li>
+          <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
     </header>
@@ -21,25 +23,57 @@
     <main>
       <section id="about">
         <h1>About Me</h1>
-        <p>Hi, my name is Mehlam Saifudeen and I am a Systems Biology and Computer Science major at Case Western Reserve University.</p>
+        <div class="about-content">
+          <div class="text-container">
+            <p>Hi, my name is Mehlam Saifudeen and I am a Systems Biology and Computer Science double major at Case Western 
+              Reserve University. I am incoming Bioinformatics and Machine Learning Intern at Regeneron Pharmaceuticals.  
+              I am passionate about the role and impact of technology and software that is used in our lives. I also want to learn more about the technologies
+              used in molecular biology and biochemical studies, to make a long lasting impact in P4 medicine. <br>
+              I am experienced in Java, Python, Javascript, HTML & CSS, R, and the various libraries used in these languages through the
+              work that I have done through my personal and school projects. <br>
+              If you would like to contact me please email me at <a href="mms330@case.edu">mms330@case.edu</a>
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="LinkedIn photo.jpeg" alt="My Image">
+          </div>
+        </div>
       </section>
 
       <section id="portfolio">
         <h1>My Portfolio</h1>
         <ul>
-          <li><a href="#">Project 1</a></li>
-          <li><a href="#">Project 2</a></li>
-          <li><a href="#">Project 3</a></li>
+          <li><a href="#"> <b>Regeneron Pharmaceuticals:&nbsp</b>Bioinformatics and Machine Learning Intern</a></li>
+          <li><a href="#"><b>Institute for Systems Biology: &nbsp</b>Bioinformatics and Data Science Intern</a></li>
+          <li><a href="#"><b>Sanjay Rajagopalan Lab at CWRU:&nbsp</b> Undergraduate Student Researcher</a></li>
+          <li><a href="#"><b>Center for RNA Science and Therapeutics at CWRU:&nbsp</b> Undergraduate Research Assistant</a></li>
         </ul>
       </section>
 
       <section id="projects">
         <h1>My Personal Projects</h1>
         <ul>
-          <li><a href="#">Project Name 1</a></li>
-          <li><a href="#">Project Name 2</a></li>
-          <li><a href="#">Project Name 3</a></li>
+          <li><a href="#"><b>Project 1:&nbsp</b> Network Inference, Integration and Enrichment Analysis</a></li>
+          <li><a href="#"><b>Project 2:&nbsp</b> Protein-Protein Interactions and Network Topology </a></li>
+          <li><a href="#"><b>Project 3:&nbsp</b> PM2.5 and its impact on Alzheimer's mortality in the United States</a></li>
+          <li><a href="#"><b>Project 4:&nbsp</b> UEFA Champions League Prediction Model</a></li>
         </ul>
+      </section>
+
+      <section id="hobbies">
+        <h1>Explore My Hobbies</h1>
+        <ul>
+          <li><a href = "hobbies.html" target="_blank"><u> Click here</u>&nbspto see what I love doing as pastimes!!! </a></li>
+        </ul>
+      </section>
+
+      <section id="social">
+        <h1>Follow Me</h1>
+        <div class = "social1">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mehlam-saifudeen-857ba1207/" class="linkedin" target="_blank"> <i class="fab fa-linkedin"></i><b>LinkedIn Profile</b></a>  <a href="https://github.com/mehlu22" class="github" target="_blank"><i class="fab fa-github"></i><b>Github Portfolio</b></a> <a href="https://open.spotify.com/user/31hp7icotedwlwuwg34vhkt2l6oy?si=l1ytwm2aQhCOPJES3rN6ZA" class="spotify" target="_blank"><i class="fab fa-spotify"><b>   Spotify Playlists</b></i></a></li>
+        </ul>
+      </div>
       </section>
 
       <section id="contact">
@@ -57,35 +91,7 @@
           <button type="submit">Send</button>
         </form>
       </section>
-
-      <section id="social">
-        <h1>Follow Me</h1>
-        <ul>
-          <li><a href="https://www.linkedin.com/in/mehlam-saifudeen-857ba1207/"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://github.com/mehlu22"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.spotify.com/"><i class="fab fa-spotify"></i></a></li>
-        </ul>
-      </section>
     </main>
-
-    <script>
-      const projectName = "My Personal Website";
-      document.title = projectName;
-
-      const projectLinks = document.querySelector("#projects ul");
-      const links = [
-        {
-          name: "Project Name 1",
-          url: "https://example.com/project1"
-        },
-        {
-          name: "Project Name 2",
-          url: "https://example.com/project2"
-        },
-        {
-          name: "Project Name 3",
-          url: "https://example.com/project3"
-        }
-      ];
-      </script>
+  </body>
+</html>
 
